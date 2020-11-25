@@ -1,0 +1,28 @@
+.footer {
+    margin-top: 118px;
+    padding-top: 30px;
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.footer__column {
+    flex: 1;
+}
+
+.footer__link {
+    display: block;
+}
+
+.footer__header {
+    margin-bottom: 12px;
+}
+
+.footer__link + .footer__link {
+    margin-top: 6px;
+}
+
+.footer__desc {
+    margin-top: 20px;
+}

@@ -1,0 +1,40 @@
+.main-block {
+    margin-top: 150px;
+}
+
+.main-block__header {
+    width: 327px;
+}
+
+.main-block__desc {
+    width: 500px;
+    margin-top: 16px;
+}
+
+.main-block__inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-block__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 37px;
+}
+
+.main-block__like {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-block__like-text {
+    margin-left: 16px;
+}
+
+.main-block__footer-submit {
+    margin-left: 42px;
+}

@@ -1,0 +1,19 @@
+.today {
+    margin-top: 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.today__desc {
+    margin-top: 18px;
+}
+
+.today__actions {
+    width: 327px;
+    margin-top: 52px;
+}
+
+.today__button {
+    margin-top: 32px;
+}

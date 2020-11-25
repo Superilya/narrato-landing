@@ -1,0 +1,45 @@
+.button {
+    display: inline-block;
+    padding: 13px 18px;
+    border-radius: 16px;
+    color: #18191F;
+    outline: none;
+    cursor: pointer;
+
+    border: 2px solid #18191F;
+    background-color: #FFBD12;
+
+    box-shadow: 0px 4px 0px 0px #18191F;
+}
+
+.button_size_s {
+    padding: 10px 16px;
+}
+
+.button_large {
+    width: 300px;
+}
+
+.button_wide {
+    width: 100%;
+}
+
+.button_size_l {
+    padding: 16px 21px;
+}
+
+.button_color_black {
+    background-color: #18191F;
+    color: white;
+    box-shadow: none;
+}
+
+.button_color_blue {
+    background-color: #1947E5;
+    color: white;
+}
+
+/* .button:hover {
+    color: white;
+    background-color: #1D4354;
+} */
