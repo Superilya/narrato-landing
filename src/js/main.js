@@ -13,6 +13,7 @@ import '../css/today.css';
 import '../css/footer.css';
 import '../css/avatar.css';
 
+const buttons = [...document.getElementsByClassName('demo-block__top-button')];
 const blocks = [...document.getElementsByClassName('demo-block__content-inner')];
 const youtubeDemo = document.getElementById('youtube-demo');
 
@@ -25,49 +26,8 @@ document.getElementById('demo-block-top').addEventListener('click', (e) => {
     }
 
     youtubeDemo.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+    buttons.forEach(button => button.classList.remove('button_color_black'));
+    e.target.classList.add('button_color_black');
     blocks.forEach(block => block.classList.remove('demo-block__content-inner_active'));
     targetBlock.classList.add('demo-block__content-inner_active');
 });
-// document.getElementById('request-form').addEventListener('submit', event => {
-//     event.preventDefault();
-//     const fields = [...event.currentTarget.elements];
-
-//     fields.forEach(field => {
-//         field.setAttribute("disabled", "disabled");
-//     });
-
-//     const data = fields.reduce((acc, element) => {
-//         if (element.nodeName !== 'BUTTON') {
-//             acc[element.name] = element.value;
-//         }
-
-//         return acc;
-//     }, {});
-
-//     let xhr = new XMLHttpRequest();
-
-//     xhr.open('POST', '/api/request/');
-
-//     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-
-//     xhr.onload = () => {
-//         if ((xhr.status === 200)) {
-//             const requestBlock = document.getElementById('request-block');
-//             const successBlock = document.getElementById('success-block');
-        
-//             if (requestBlock && successBlock) {
-//                 requestBlock.classList.add('request__block_hide')
-//                 successBlock.classList.remove('request__block_hide')
-//             }
-
-//             return;
-//         }
-
-//         fields.forEach(field => {
-//             field.removeAttribute("disabled");
-//         });
-//     };
-
-//     // 3. Отсылаем запрос
-//     xhr.send(JSON.stringify(data));
-// });

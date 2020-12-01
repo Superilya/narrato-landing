@@ -1,8 +1,31 @@
 .today {
     margin-top: 143px;
+}
+
+.today__header {
+    position: relative;
+    padding: 0 10px;
+}
+
+.today__header::after, .today__header::before {
+    position: absolute;
+    content: '🌟';
+    top: 0;
+}
+
+.today__header::after {
+    left: -25px;
+}
+
+.today__header::before {
+    right: -25px;
+}
+
+.today__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .today__desc {
@@ -10,10 +33,39 @@
 }
 
 .today__actions {
-    width: 327px;
+    width: 100%;
+    max-width: 327px;
     margin-top: 52px;
 }
 
 .today__button {
     margin-top: 32px;
+}
+
+.today__person-img {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    z-index: -1;
+}
+
+@media (max-width: 1000px) {
+    .today__person-img {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .today {
+        margin-top: 80px;
+    }
+
+    .today__button {
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .today__header {
+        width: 185px;
+    }
 }

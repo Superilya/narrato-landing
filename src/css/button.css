@@ -28,7 +28,7 @@
     padding: 16px 21px;
 }
 
-.button_color_black {
+.button.button_color_black {
     background-color: #18191F;
     color: white;
     box-shadow: none;
@@ -37,6 +37,12 @@
 .button_color_blue {
     background-color: #1947E5;
     color: white;
+}
+
+@media (max-width: 1000px) {
+    .button_large {
+        width: auto;
+    }
 }
 
 /* .button:hover {

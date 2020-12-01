@@ -1,13 +1,16 @@
 .main-block {
-    margin-top: 150px;
+    margin-top: 130px;
+    position: relative;
 }
 
 .main-block__header {
-    width: 327px;
+    width: 100%;
+    max-width: 327px;
 }
 
 .main-block__desc {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin-top: 16px;
 }
 
@@ -22,19 +25,98 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 37px;
+    margin-top: 62px;
 }
 
 .main-block__like {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 16px;
 }
 
 .main-block__like-text {
     margin-left: 16px;
 }
 
-.main-block__footer-submit {
+.main-block__phone-img {
+    position: absolute;
+    top: -84px;
+    left: 517px;
+    max-width: 100%;
+}
+
+.main-block__macbook-img {
+    max-width: 100%;
+    position: absolute;
+    top: -17px;
+    left: 710px;
+    margin-top: 36px;
+}
+
+.main-block__paint-img {
+    position: absolute;
+    top: -277px;
+    right: -484px;
+    height: 583px;
+    z-index: -1;
+}
+
+.main-block__input-wrap {
+    width: 300px;
+}
+
+.main-block__input-wrap + .main-block__input-wrap {
     margin-left: 42px;
+}
+
+@media (max-width: 1000px) {
+    .main-block__input-wrap + .main-block__input-wrap {
+        width: auto;
+    }
+
+    .main-block__macbook-img {
+        position: initial;
+        margin: 36px auto 0;
+        display: block;
+    }
+
+    .main-block__footer {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-block {
+        margin-top: 18px;
+    }
+
+    .main-block__inputs {
+        flex-direction: column;
+    }
+
+    .main-block__footer {
+        flex-direction: column;
+    }
+
+    .main-block__input-wrap + .main-block__input-wrap {
+        margin-left: 0;
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .main-block__like {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .main-block__paint-img {
+        display: none;
+    }
+
+    .main-block__phone-img {
+        position: initial;
+        margin: 36px auto 0;
+        display: block;
+    }
 }

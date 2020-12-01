@@ -26,3 +26,17 @@
 .footer__desc {
     margin-top: 20px;
 }
+
+.footer__logo {
+    height: 50px;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__column + .footer__column {
+        margin-top: 21px;
+    }
+}

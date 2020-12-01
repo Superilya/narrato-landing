@@ -1,5 +1,5 @@
 .ways {
-    margin-top: 32px;
+    margin-top: 64px;
 }
 
 .ways__top {
@@ -9,7 +9,8 @@
 }
 
 .ways__desc {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin-top: 18px;
 }
 
@@ -29,11 +30,37 @@
 }
 
 .ways__cell + .ways__cell {
-    margin-left: 20px;
-    padding-left: 20px;
     border-left: 1px solid #8F8E8A;
 }
 
 .ways__table-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ways__cell-content {
+    padding: 0 10px;
+    max-width: 350px;
+    margin: auto;
+}
+
+.ways__cell-img-wrap {
+    padding-bottom: 62%;
+    position: relative;
+    max-width: 100%;
+    height: 0;
     margin-bottom: 18px;
+}
+
+@media (max-width: 700px) {
+    .ways__table {
+        flex-direction: column;
+    }
+
+    .ways__cell + .ways__cell {
+        border-left: none;
+    }
 }

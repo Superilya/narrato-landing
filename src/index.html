@@ -12,45 +12,68 @@
 
 <body>
     <header class="header">
-        <div class="header__inner wrap">
-            <img src="logo.svg" class="header__logo" />
-            <div class="header__menu">
-                    <a class="text text_bold header__menu-item" href="#">
+        <div class="wrap">
+            <div class="wrap__offset header__inner">
+                <div class="header__menu">
+                    <div class="header__logo-wrap">
+                        <img src="logo.svg" class="header__logo" />
+                    </div>
+                    <div class="header__menu-links">
+                        <a class="text text_bold header__menu-link" href="#">
+                            Showcase
+                        </a>
+                        <a class="text text_bold header__menu-link" href="#">
+                            Pricing
+                        </a>
+                    </div>
+                    <button class="button button_large header__menu-button text text_bold">
+                        Sign&nbsp;up
+                    </button>
+                </div>
+                <div class="header__menu-links_mobile">
+                    <a class="text text_bold header__menu-link" href="#">
                         Showcase
                     </a>
-                    <a class="text text_bold header__menu-item" href="#">
+                    <a class="text text_bold header__menu-link" href="#">
                         Pricing
                     </a>
-                    <button class="button button_size_l button_large header__menu-item text text_bold">
-                        Sign up
-                    </button>
+                </div>
             </div>
         </div>
     </header>
     <div class="main-block wrap">
-        <div class="main-block__header text text_bold text_header">
-            Narrato helps telling amazing stories
-        </div>
-        <div class="main-block__desc text text_color_grey">
-            You can create interactive, narrative and multi-linear stories.
-            Browser-based, drag-and-drop editor with many types of&nbsp;content: images, videos, questions, embeds and lots of&nbsp;others. With no-code.
-            Multi-linear stories with variables, conditional logic. With no-code.
-            Publish stories on&nbsp;web, mobile and messengers. We&nbsp;host.
-        </div>
-        <div class="main-block__footer">
-            <div class="main-block__inputs">
-                <input class="input" placeholder="Enter your email..." />
-                <button class="button button_size_l button_large text text_bold main-block__footer-submit">
-                    Sign up
-                </button>
+        <div class="wrap__offset">
+            <div class="main-block__header text text_bold text_header">
+                Narrato helps telling amazing stories
             </div>
-            <div class="main-block__like">
-                <img src="heart.svg" />
-                <div class="text text_color_grey main-block__like-text">
-                    Focused on&nbsp;author workflow.
+            <div class="main-block__desc text text_color_grey">
+                <p>You can create interactive, narrative and multi-linear stories.</p>
+                <p>Browser-based, drag-and-drop editor with many types of&nbsp;content: images, videos, questions, embeds and lots of&nbsp;others. With no-code.</p>
+                <p>Multi-linear stories with variables, conditional logic. With no-code.</p>
+                <p>Publish stories on&nbsp;web, mobile and messengers. We&nbsp;host.</p>
+            </div>
+            <img src="phone.png" class="main-block__phone-img" />
+            <img src="macbook.png" class="main-block__macbook-img" />
+            <div class="main-block__footer">
+                <div class="main-block__inputs">
+                    <div class="main-block__input-wrap">
+                        <input class="input input_wide" placeholder="Enter your email..." />
+                    </div>
+                    <div class="main-block__input-wrap">
+                        <button class="button button_wide  text text_bold main-block__footer-submit">
+                            Sign&nbsp;up
+                        </button>
+                    </div>
+                </div>
+                <div class="main-block__like">
+                    <img src="heart.svg" />
+                    <div class="text text_color_grey main-block__like-text">
+                        Focused on&nbsp;author workflow.
+                    </div>
                 </div>
             </div>
         </div>
+        <img src="paint.jpg" class="main-block__paint-img" />
     </div>
     <div class="demo-block wrap">
         <div class="demo-block__top" id="demo-block-top">
@@ -77,167 +100,187 @@
         </div>
     </div>
     <div class="ways wrap">
-        <div class="ways__top">
-            <div class="text text_bold text_header">
-                Apply in&nbsp;different ways
-            </div>
-            <div class="text text_center ways__desc">
-                Narrato stories can be&nbsp;applied everywhere, where you need to&nbsp;involve reader.
-            </div>
-        </div>
-        <div class="ways__table">
-            <div class="ways__cell">
-                <img src="image1.png" class="ways__table-img" />
+        <div class="wrap__offset">
+            <div class="ways__top">
                 <div class="text text_bold text_header text_center">
-                    Interactive fiction
+                    Apply in&nbsp;different ways
                 </div>
-                <div class="text text_center ways__table-desc">
-                    Share stories that others will love to&nbsp;read
-                </div>
-            </div>
-            <div class="ways__cell">
-                <img src="image2.png" class="ways__table-img" />
-                <div class="text text_bold text_header text_center">
-                    Marketing
-                </div>
-                <div class="text text_center ways__table-desc">
-                    Show your product advantages and involve better than quizzes
+                <div class="text text_center ways__desc">
+                    Narrato stories can be&nbsp;applied everywhere, where you need to&nbsp;involve reader.
                 </div>
             </div>
-            <div class="ways__cell">
-                <img src="image3.png" class="ways__table-img" />
-                <div class="text text_bold text_header text_center">
-                    Education
+            <div class="ways__table">
+                <div class="ways__cell">
+                    <div class="ways__cell-content">
+                        <div class="ways__cell-img-wrap">
+                            <img src="image1.png" class="ways__table-img" />
+                        </div>
+                        <div class="text text_bold text_header text_center">
+                            Interactive fiction
+                        </div>
+                        <div class="text text_center ways__table-desc">
+                            Share stories that others will love to&nbsp;read
+                        </div>
+                    </div>
                 </div>
-                <div class="text text_center ways__table-desc">
-                    Learn by&nbsp;doing and failing in&nbsp;safe environment
+                <div class="ways__cell">
+                    <div class="ways__cell-content">
+                        <div class="ways__cell-img-wrap">
+                            <img src="image2.png" class="ways__table-img" />
+                        </div>
+                        <div class="text text_bold text_header text_center">
+                            Marketing
+                        </div>
+                        <div class="text text_center ways__table-desc">
+                            Show your product advantages and involve better than quizzes
+                        </div>
+                    </div>
+                </div>
+                <div class="ways__cell">
+                    <div class="ways__cell-content">
+                        <div class="ways__cell-img-wrap">
+                            <img src="image3.png" class="ways__table-img" />
+                        </div>
+                        <div class="text text_bold text_header text_center">
+                            Education
+                        </div>
+                        <div class="text text_center ways__table-desc">
+                            Learn by&nbsp;doing and failing in&nbsp;safe environment
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="twine wrap">
-        <div class="text text_bold text_header">
-            Replaces Twine
-        </div>
-        <div class="text text_center twine__desc">
-            No&nbsp;more HTML,CSS, JS&nbsp;coding.
-        </div>
-        <div class="twine__actions">
-            <input class="input" placeholder="Enter your email..." />
-            <button class="button button_size_l button_large header__menu-item text text_bold twine__button">
-                Sign up
-            </button>
+    <div class="twine">
+        <div class="wrap">
+            <div class="wrap__offset twine__inner">
+                <div class="text text_bold text_header">
+                    Replaces Twine
+                </div>
+                <div class="text text_center twine__desc">
+                    No&nbsp;more HTML,CSS, JS&nbsp;coding.
+                </div>
+                <div class="twine__actions">
+                    <input class="input twine__input" placeholder="Enter your email..." />
+                    <button class="button button_large header__menu-item text text_bold twine__input">
+                        Sign up
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="powered wrap">
-        <div class="text text_bold text_header">
-            Powered by Narrato
-        </div>
-        <div class="text text_center powered__desc">
-            Explore the best interactive stories created with Narrato.
-        </div>
-        <div class="powered__plits">
-            <div class="powered__plit">
-                <div>
-                    <div class="powered__plit-top">
-                        <img src="avatar.svg" class="avatar" />
-                        <div class="powered__plit-desc text text_bold text_size_m">
-                            Lamborci Mona
-                        </div>
-                    </div>
-                    <div class="text text_bold text_header">
-                        Labyrinth of&nbsp;fear
-                    </div>
-                </div>
-                <div class="powered__plit-bottom">
-                    <div class="powered__plit-bottom-left">
-                        <div class="powered__plit-count">
-                            <img src="icon-comment.svg" />
-                            <div class="powered__plit-count-number text text_bold text_size_s">
-                                22
-                            </div>
-                        </div>
-                        <div class="powered__plit-count">
-                            <img src="icon-heart.svg" />
-                            <div class="powered__plit-count-number text text_bold text_size_s">
-                                33
-                            </div>
-                        </div>
-                    </div>
-                    <div class="powered__plit-count">
-                        <img src="icon-share.svg" />
-                        <div class="powered__plit-count-number text text_bold text_size_s">
-                            55
-                        </div>
-                    </div>
-                </div>
+        <div class="wrap__offset powered__inner">
+            <div class="text text_bold text_header text_center">
+                Powered by Narrato
             </div>
-            <div class="powered__plit">
-                <div>
-                    <div class="powered__plit-top">
-                        <img src="avatar.svg" class="avatar" />
-                        <div class="powered__plit-desc text text_bold text_size_m">
-                            Lamborci Mona
-                        </div>
-                    </div>
-                    <div class="text text_bold text_header">
-                        Labyrinth of&nbsp;fear
-                    </div>
-                </div>
-                <div class="powered__plit-bottom">
-                    <div class="powered__plit-bottom-left">
-                        <div class="powered__plit-count">
-                            <img src="icon-comment.svg" />
-                            <div class="powered__plit-count-number text text_bold text_size_s">
-                                22
-                            </div>
-                        </div>
-                        <div class="powered__plit-count">
-                            <img src="icon-heart.svg" />
-                            <div class="powered__plit-count-number text text_bold text_size_s">
-                                33
-                            </div>
-                        </div>
-                    </div>
-                    <div class="powered__plit-count">
-                        <img src="icon-share.svg" />
-                        <div class="powered__plit-count-number text text_bold text_size_s">
-                            55
-                        </div>
-                    </div>
-                </div>
+            <div class="text text_center powered__desc">
+                Explore the best interactive stories created with Narrato.
             </div>
-            <div class="powered__plit">
-                <div>
-                    <div class="powered__plit-top">
-                        <img src="avatar.svg" class="avatar" />
-                        <div class="powered__plit-desc text text_bold text_size_m">
-                            Lamborci Mona
+            <div class="powered__plits">
+                <div class="powered__plit">
+                    <div>
+                        <div class="powered__plit-top">
+                            <img src="avatar.svg" class="avatar" />
+                            <div class="powered__plit-desc text text_bold text_size_m">
+                                Lamborci Mona
+                            </div>
+                        </div>
+                        <div class="text text_bold text_header">
+                            Labyrinth of&nbsp;fear
                         </div>
                     </div>
-                    <div class="text text_bold text_header">
-                        Labyrinth of&nbsp;fear
+                    <div class="powered__plit-bottom">
+                        <div class="powered__plit-bottom-left">
+                            <div class="powered__plit-count">
+                                <img src="icon-comment.svg" />
+                                <div class="powered__plit-count-number text text_bold text_size_s">
+                                    22
+                                </div>
+                            </div>
+                            <div class="powered__plit-count">
+                                <img src="icon-heart.svg" />
+                                <div class="powered__plit-count-number text text_bold text_size_s">
+                                    33
+                                </div>
+                            </div>
+                        </div>
+                        <div class="powered__plit-count">
+                            <img src="icon-share.svg" />
+                            <div class="powered__plit-count-number text text_bold text_size_s">
+                                55
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="powered__plit-bottom">
-                    <div class="powered__plit-bottom-left">
-                        <div class="powered__plit-count">
-                            <img src="icon-comment.svg" />
-                            <div class="powered__plit-count-number text text_bold text_size_s">
-                                22
+                <div class="powered__plit">
+                    <div>
+                        <div class="powered__plit-top">
+                            <img src="avatar.svg" class="avatar" />
+                            <div class="powered__plit-desc text text_bold text_size_m">
+                                Lamborci Mona
+                            </div>
+                        </div>
+                        <div class="text text_bold text_header">
+                            Labyrinth of&nbsp;fear
+                        </div>
+                    </div>
+                    <div class="powered__plit-bottom">
+                        <div class="powered__plit-bottom-left">
+                            <div class="powered__plit-count">
+                                <img src="icon-comment.svg" />
+                                <div class="powered__plit-count-number text text_bold text_size_s">
+                                    22
+                                </div>
+                            </div>
+                            <div class="powered__plit-count">
+                                <img src="icon-heart.svg" />
+                                <div class="powered__plit-count-number text text_bold text_size_s">
+                                    33
+                                </div>
                             </div>
                         </div>
                         <div class="powered__plit-count">
-                            <img src="icon-heart.svg" />
+                            <img src="icon-share.svg" />
                             <div class="powered__plit-count-number text text_bold text_size_s">
-                                33
+                                55
                             </div>
                         </div>
                     </div>
-                    <div class="powered__plit-count">
-                        <img src="icon-share.svg" />
-                        <div class="powered__plit-count-number text text_bold text_size_s">
-                            55
+                </div>
+                <div class="powered__plit">
+                    <div>
+                        <div class="powered__plit-top">
+                            <img src="avatar.svg" class="avatar" />
+                            <div class="powered__plit-desc text text_bold text_size_m">
+                                Lamborci Mona
+                            </div>
+                        </div>
+                        <div class="text text_bold text_header">
+                            Labyrinth of&nbsp;fear
+                        </div>
+                    </div>
+                    <div class="powered__plit-bottom">
+                        <div class="powered__plit-bottom-left">
+                            <div class="powered__plit-count">
+                                <img src="icon-comment.svg" />
+                                <div class="powered__plit-count-number text text_bold text_size_s">
+                                    22
+                                </div>
+                            </div>
+                            <div class="powered__plit-count">
+                                <img src="icon-heart.svg" />
+                                <div class="powered__plit-count-number text text_bold text_size_s">
+                                    33
+                                </div>
+                            </div>
+                        </div>
+                        <div class="powered__plit-count">
+                            <img src="icon-share.svg" />
+                            <div class="powered__plit-count-number text text_bold text_size_s">
+                                55
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,68 +288,73 @@
         </div>
     </div>
     <div class="today wrap">
-        <div class="text text_bold text_header">
-            🌟 Try Narrato today ️🌟
-        </div>
-        <div class="text text_center">
-            Start for free&nbsp;&mdash; upgrade anytime.
-        </div>
-        <div class="today__actions">
-            <input class="input input_wide" placeholder="Enter your email..." />
-            <button class="button button_wide button_size_l button_large header__menu-item text text_bold today__button">
-                Sign up
-            </button>
+        <div class="today__inner wrap__offset">
+            <img src="person.svg" class="today__person-img" />
+            <div class="text text_bold text_header text_center today__header">
+                Try Narrato today
+            </div>
+            <div class="text text_center today__desc">
+                Start for free&nbsp;&mdash; upgrade anytime.
+            </div>
+            <div class="today__actions">
+                <input class="input input_wide" placeholder="Enter your email..." />
+                <button class="button button_wide button_large header__menu-item text text_bold today__button">
+                    Sign up
+                </button>
+            </div>
         </div>
     </div>
-    <footer class="footer wrap">
-        <div class="footer__column">
-            <img src="logo.svg" />
-            <div class="text text_color_grey footer__desc">
-                Narrato is&nbsp;a&nbsp;modern interactive stories builder.
+    <footer class="wrap">
+        <div class="wrap__offset footer">
+            <div class="footer__column">
+                <img src="logo.svg" class="footer__logo" />
+                <div class="text text_color_grey footer__desc">
+                    Narrato is&nbsp;a&nbsp;modern interactive stories builder.
+                </div>
             </div>
-        </div>
-        <div class="footer__column">
-            <div class="text text_bold footer__header">
-                Product
+            <div class="footer__column">
+                <div class="text text_bold footer__header">
+                    Product
+                </div>
+                <a href="#" class="text text_color_grey footer__link">
+                    Overview
+                </a>
+                <a href="#" class="text text_color_grey footer__link">
+                    Pricing
+                </a>
+                <a href="#" class="text text_color_grey footer__link">
+                    Changelog
+                </a>
+                <a href="#" class="text text_color_grey footer__link">
+                    Roadmap
+                </a>
+                <a href="#" class="text text_color_grey footer__link">
+                    Referral
+                </a>
             </div>
-            <a href="#" class="text text_color_grey footer__link">
-                Overview
-            </a>
-            <a href="#" class="text text_color_grey footer__link">
-                Pricing
-            </a>
-            <a href="#" class="text text_color_grey footer__link">
-                Changelog
-            </a>
-            <a href="#" class="text text_color_grey footer__link">
-                Roadmap
-            </a>
-            <a href="#" class="text text_color_grey footer__link">
-                Referral
-            </a>
-        </div>
-        <div class="footer__column">
-            <div class="text text_bold footer__header">
-                Company
+            <div class="footer__column">
+                <div class="text text_bold footer__header">
+                    Company
+                </div>
+                <a href="#" class="text text_color_grey footer__link">
+                    About
+                </a>
+                <a href="#" class="text text_color_grey footer__link">
+                    Media kit
+                </a>
+                <a href="#" class="text text_color_grey footer__link">
+                    Help
+                </a>
+                <a href="#" class="text text_color_grey footer__link">
+                    Twitter @NarratoHQ
+                </a>
+                <a href="#" class="text text_color_grey footer__link">
+                    Send us a message
+                </a>
+                <a href="#" class="text text_color_grey footer__link">
+                    Email us
+                </a>
             </div>
-            <a href="#" class="text text_color_grey footer__link">
-                About
-            </a>
-            <a href="#" class="text text_color_grey footer__link">
-                Media kit
-            </a>
-            <a href="#" class="text text_color_grey footer__link">
-                Help
-            </a>
-            <a href="#" class="text text_color_grey footer__link">
-                Twitter @NarratoHQ
-            </a>
-            <a href="#" class="text text_color_grey footer__link">
-                Send us a message
-            </a>
-            <a href="#" class="text text_color_grey footer__link">
-                Email us
-            </a>
         </div>
     </footer>
 </body>
